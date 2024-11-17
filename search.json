@@ -1,0 +1,156 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Your name",
+    "section": "",
+    "text": "Welcome to the lukmayer.github.io website template!\nThe way this template is intended is that you look at the source files and the rendered site at the same time to see how the different features I show you throughout this template can be used. This is because I provide a lot of comments in the source files to help you. These comments do not necessarily show in the rendered site. Hope you enjoy!\n\n\n\n\n Email \n Github \n Medium"
+  },
+  {
+    "objectID": "about/index.html",
+    "href": "about/index.html",
+    "title": "Basic Markdown Features",
+    "section": "",
+    "text": "This is bold text, italic text, and bold italic text. You can also use strikethrough and inline code.\n\n\n\n\nUnordered list item 1\n\nNested item A\nNested item B\n\nUnordered list item 2\n\n\nOrdered list item 1\nOrdered list item 2\n\nNested ordered item\n\n\n\n\n\n\nThis is a blockquote Multiple lines can be used\n\n\n\n\nInline math: \\(E = mc^2\\)\nDisplay math: \\[\n\\begin{aligned}\n\\frac{\\partial f}{\\partial x} &= 2x \\\\\n\\int_0^\\infty e^{-x} dx &= 1\n\\end{aligned}\n\\]\n\n\n\nPassive code block:\ndef hello_world():\n    print(&quot;Hello, Quarto!&quot;)\n    return True\nActive code block:\n\n\nCode\nplot(rnorm(100), rnorm(100))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHeader 1\nHeader 2\nHeader 3\n\n\n\n\nRow 1\nA\n1\n\n\nRow 2\nB\n2\n\n\nRow 3\nC\n3"
+  },
+  {
+    "objectID": "about/index.html#text-formatting",
+    "href": "about/index.html#text-formatting",
+    "title": "Your future about page",
+    "section": "Text Formatting",
+    "text": "Text Formatting\nThis is bold text, italic text, and bold italic text. You can also use strikethrough and inline code."
+  },
+  {
+    "objectID": "about/index.html#lists",
+    "href": "about/index.html#lists",
+    "title": "Your future about page",
+    "section": "Lists",
+    "text": "Lists\n\nUnordered list item 1\n\nNested item A\nNested item B\n\nUnordered list item 2\n\n\nOrdered list item 1\nOrdered list item 2\n\nNested ordered item"
+  },
+  {
+    "objectID": "about/index.html#blockquotes",
+    "href": "about/index.html#blockquotes",
+    "title": "Your future about page",
+    "section": "Blockquotes",
+    "text": "Blockquotes\n\nThis is a blockquote Multiple lines can be used"
+  },
+  {
+    "objectID": "about/index.html#mathematical-expressions",
+    "href": "about/index.html#mathematical-expressions",
+    "title": "Your future about page",
+    "section": "Mathematical Expressions",
+    "text": "Mathematical Expressions\nInline math: \\(E = mc^2\\)\nDisplay math: \\[\n\\begin{aligned}\n\\frac{\\partial f}{\\partial x} &= 2x \\\\\n\\int_0^\\infty e^{-x} dx &= 1\n\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "about/index.html#code-blocks",
+    "href": "about/index.html#code-blocks",
+    "title": "Your future about page",
+    "section": "Code Blocks",
+    "text": "Code Blocks\nPassive code block (only for show, no execution):\ndef hello_world():\n    print(&quot;Hello, Quarto!&quot;)\n    return True\nActive code block (this code will be executed):\n\n\nCode\nplot(rnorm(100), rnorm(100))"
+  },
+  {
+    "objectID": "about/index.html#tables",
+    "href": "about/index.html#tables",
+    "title": "Your future about page",
+    "section": "Tables",
+    "text": "Tables\n\n\n\nHeader 1\nHeader 2\nHeader 3\n\n\n\n\nRow 1\nA\n1\n\n\nRow 2\nB\n2\n\n\nRow 3\nC\n3"
+  },
+  {
+    "objectID": "cv/index.html",
+    "href": "cv/index.html",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "AcademicIndustry\n\n\n\n\n\n\n\nYou can link a different version here or use tabs for whatever you like! Your creativity is the limit.\nnote that each high level header within the tabset class will be a tab\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Your blog name",
+    "section": "",
+    "text": "Because I set an ID, I can place text above the listing\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nCustomization Workflow\n\n\n3 min\n\n\nHow to customize your quarto website further\n\n\n\nApr 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nEmbedding presentations\n\n\n1 min\n\n\nHow to embed presentations in your quarto document\n\n\n\nMar 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nempty post\n\n\n1 min\n\n\n\n\n\n\nJan 1, 1970\n\n\n\n\n\n\n\n\nNo matching items\n\n\n  \n\n\nand below the listing!\nCheck out the pagination over here ——————–&gt;\nIt only looks weird because I limited page size to 2\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "about/index.html#callouts",
+    "href": "about/index.html#callouts",
+    "title": "Your future about page",
+    "section": "Callouts",
+    "text": "Callouts\n\n\n\n\n\n\nNote\n\n\n\nThis is a note callout\n\n\n\n\n\n\n\n\nWarning\n\n\n\nThis is a warning callout"
+  },
+  {
+    "objectID": "about/index.html#footnotes-and-references",
+    "href": "about/index.html#footnotes-and-references",
+    "title": "Your future about page",
+    "section": "Footnotes and references",
+    "text": "Footnotes and references\nHere’s a sentence with a footnote1.\n1 This is the footnote text.2 Like this one which is written inlineYou can also use inline footnotes2.\nHere’s how to reference: Mayer (2024)"
+  },
+  {
+    "objectID": "blog/posts/post2/index.html",
+    "href": "blog/posts/post2/index.html",
+    "title": "Embedding presentations",
+    "section": "",
+    "text": "RevealJS is super powerful and has tons of amazing features. Even better, we can embed such presentations into quarto documents since they can be rendered to html.\nHere’s how to do it:\n\n\nDefinetely make sure to read the Quarto RevealJS documentation as this is not the focus of this template. You can find it here\nI’m pretty sure you can embed other types of interactive content with this method as well, but have not had the chance to try it yet!\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "blog/posts/post1/index.html",
+    "href": "blog/posts/post1/index.html",
+    "title": "Customization Workflow",
+    "section": "",
+    "text": "Generally speaking you want to first check whether the Quarto documentation has something that can help you achieve the thing you want to do. The documentation is extensive but sometimes it can be hard to find the right information as it’s sometimes in places you didn’t expect. I would recommend reading quite widely. For example, you might not have an interest in books or dashboards, but these pages still sometimes have nuggets that allow you to do something cool on your website.\nIf you can’t find anything powerful enough, you may have to write your own code. This could mean writing completely new things, or just overwriting existing code. Most of the time you will be doing the latter, say to change the color of something. For this it’s important to know that you can embed html code directly in your document. This also means you can have css and javascript in there by wrapping that code in &lt;style&gt; and &lt;script&gt; tags respectively. This is the best way to go about modifying single pages.\nSo how to go about changing the style of something on your quarto website? The easiest low-code approach is to tell a language model what you want and then just try if that works. To maximize your success you need to tell the model what the name of the thing is you want to change. For example let’s say I want to change the font color of my title block. You would open your website, find a title block somewhere, right-click on it and click “inspect”. This will open the developer tools of your browser and show you the html code of the page. You can then hover over the code and see what part of the page it corresponds to. Once you found the segment you want to change, you can right-click on it and click “copy” and then something like “copy element”. You can supply all of this to the language model, and it will probably figure out what you mean from there. In our case all we really needed is CSS code to modify this:\n&lt;div class=\"quarto-title-banner\"&gt;\nwhich could be something like:\n.quarto-title-banner {\n    color: red;\n}\nThe CSS you can either embed on your page by wrapping it in &lt;style&gt; tags, or you can put it in your styles.css file. The latter is the better approach if you want to change something on all pages.\nHere’s how to wrap in &lt;style&gt; tags:\n&lt;style&gt;\n.quarto-title-banner {\n    color: red;\n}\n&lt;/style&gt;\nIf you want to add code to all pages you can also use includes. Check here for more information: https://quarto.org/docs/reference/formats/pdf.html#includes. This is can be very time-saving, and is something I use for my login portal (see this post).\nLastly, keep in mind that things can be buggy (especially anything involving lots of code chunks or revealjs). You sometimes have to clear some cache hidden somewhere or restart the preview server to see changes.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "blog/posts/post3/index.html",
+    "href": "blog/posts/post3/index.html",
+    "title": "empty post",
+    "section": "",
+    "text": "an empty post so that you can see the pagination of the blog\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "presentations/pres1.html#my-website",
+    "href": "presentations/pres1.html#my-website",
+    "title": "Example presentation",
+    "section": "My website",
+    "text": "My website\n\nLukas W. Mayer’s website\nnow, some tips about revealjs"
+  },
+  {
+    "objectID": "presentations/pres1.html#some-tips-about-revealjs",
+    "href": "presentations/pres1.html#some-tips-about-revealjs",
+    "title": "Example presentation",
+    "section": "Some tips about revealjs",
+    "text": "Some tips about revealjs\n\nfreeze: true can cause issues\nif it doesnt look right, go to the _freeze directory\nthen check the site_libs directory for a revealjs folder\ndelete that folder and re-render the presentation."
+  },
+  {
+    "objectID": "presentations/pres1.html#when-stuff-breaks",
+    "href": "presentations/pres1.html#when-stuff-breaks",
+    "title": "Example presentation",
+    "section": "When stuff breaks",
+    "text": "When stuff breaks\n\nfreeze: true can cause issues\nif it doesnt look right, go to the _freeze directory\nthen check the site_libs directory for a revealjs folder\ndelete that folder and re-render the presentation."
+  },
+  {
+    "objectID": "presentations/pres1.html",
+    "href": "presentations/pres1.html",
+    "title": "Example presentation",
+    "section": "",
+    "text": "Lukas W. Mayer’s website\nnow, some tips about revealjs"
+  },
+  {
+    "objectID": "presentations/pres1.html#the-end",
+    "href": "presentations/pres1.html#the-end",
+    "title": "Example presentation",
+    "section": "The end",
+    "text": "The end\n\nMore info about RevealJS here"
+  },
+  {
+    "objectID": "presentations/pres1.html#some-tips-about-revealjs-1",
+    "href": "presentations/pres1.html#some-tips-about-revealjs-1",
+    "title": "Example presentation",
+    "section": "Some tips about revealjs 1",
+    "text": "Some tips about revealjs 1\n\nfreeze: true can cause issues\nif it doesnt look right, go to the _freeze directory\nthen check the site_libs directory for a revealjs folder\ndelete that folder and re-render the presentation."
+  },
+  {
+    "objectID": "presentations/pres1.html#some-tips-about-revealjs-2",
+    "href": "presentations/pres1.html#some-tips-about-revealjs-2",
+    "title": "Example presentation",
+    "section": "Some tips about revealjs 2",
+    "text": "Some tips about revealjs 2\n\nyou may have to render the presentation separately, before rendering the website.\nso edit your presentation with the revealjs freeze folder removed\nthen render the presentation file, and then render the website."
+  }
+]

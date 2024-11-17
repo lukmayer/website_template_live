@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>My website</title>
+<link>https://lukmayer.github.io/blog/</link>
+<atom:link href="https://lukmayer.github.io/blog/index.xml" rel="self" type="application/rss+xml"/>
+<description>some SEO information about your blog</description>
+<generator>quarto-1.5.57</generator>
+<lastBuildDate>Fri, 11 Apr 2025 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>Customization Workflow</title>
+  <link>https://lukmayer.github.io/blog/posts/post1/</link>
+  <description><![CDATA[ 
+
+
+
+  
+
+
+<p>Generally speaking you want to first check whether the Quarto documentation has something that can help you achieve the thing you want to do. The documentation is extensive but sometimes it can be hard to find the right information as it’s sometimes in places you didn’t expect. I would recommend reading quite widely. For example, you might not have an interest in books or dashboards, but these pages still sometimes have nuggets that allow you to do something cool on your website.</p>
+<p>If you can’t find anything powerful enough, you may have to write your own code. This could mean writing completely new things, or just overwriting existing code. Most of the time you will be doing the latter, say to change the color of something. For this it’s important to know that you can embed html code directly in your document. This also means you can have css and javascript in there by wrapping that code in <code>&lt;style&gt;</code> and <code>&lt;script&gt;</code> tags respectively. This is the best way to go about modifying single pages.</p>
+<p>So how to go about changing the style of something on your quarto website? The easiest low-code approach is to tell a language model what you want and then just try if that works. To maximize your success you need to tell the model what the name of the thing is you want to change. For example let’s say I want to change the font color of my title block. You would open your website, find a title block somewhere, right-click on it and click “inspect”. This will open the developer tools of your browser and show you the html code of the page. You can then hover over the code and see what part of the page it corresponds to. Once you found the segment you want to change, you can right-click on it and click “copy” and then something like “copy element”. You can supply all of this to the language model, and it will probably figure out what you mean from there. In our case all we really needed is CSS code to modify this:</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb1-1"><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">&lt;</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">div</span><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;"> class</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"quarto-title-banner"</span><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">&gt;</span></span></code></pre></div>
+<p>which could be something like:</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb2-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">.quarto-title-banner</span> {</span>
+<span id="cb2-2">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">color</span><span class="ch" style="color: #20794D;
+background-color: null;
+font-style: inherit;">:</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">red</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb2-3">}</span></code></pre></div>
+<p>The CSS you can either embed on your page by wrapping it in <code>&lt;style&gt;</code> tags, or you can put it in your styles.css file. The latter is the better approach if you want to change something on all pages.</p>
+<p>Here’s how to wrap in <code>&lt;style&gt;</code> tags:</p>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb3-1"><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">&lt;</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">style</span><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">&gt;</span></span>
+<span id="cb3-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">.quarto-title-banner</span> {</span>
+<span id="cb3-3">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">color</span><span class="ch" style="color: #20794D;
+background-color: null;
+font-style: inherit;">:</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">red</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb3-4">}</span>
+<span id="cb3-5"><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">&lt;/</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">style</span><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">&gt;</span></span></code></pre></div>
+<p>If you want to add code to all pages you can also use includes. Check here for more information: <a href="https://quarto.org/docs/reference/formats/pdf.html#includes">https://quarto.org/docs/reference/formats/pdf.html#includes</a>. This is can be very time-saving, and is something I use for my login portal (see <a href="https://lukmayer.github.io/blog/posts/login/">this post</a>).</p>
+<p>Lastly, keep in mind that things can be buggy (especially anything involving lots of code chunks or revealjs). You sometimes have to clear some cache hidden somewhere or restart the preview server to see changes.</p>
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <category>customization</category>
+  <category>website</category>
+  <guid>https://lukmayer.github.io/blog/posts/post1/</guid>
+  <pubDate>Fri, 11 Apr 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://lukmayer.github.io/assets/dude.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>Embedding presentations</title>
+  <link>https://lukmayer.github.io/blog/posts/post2/</link>
+  <description><![CDATA[ 
+
+
+
+  
+
+
+<p>RevealJS is super powerful and has tons of amazing features. Even better, we can embed such presentations into quarto documents since they can be rendered to html.</p>
+<p>Here’s how to do it:</p>
+<iframe src="../../../presentations/pres1.html" width="800" height="600" frameborder="0" allowfullscreen="">
+</iframe>
+<p>Definetely make sure to read the Quarto RevealJS documentation as this is not the focus of this template. You can find it <a href="https://quarto.org/docs/presentations/revealjs/index.html">here</a></p>
+<p>I’m pretty sure you can embed other types of interactive content with this method as well, but have not had the chance to try it yet!</p>
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <category>presentations</category>
+  <category>website</category>
+  <guid>https://lukmayer.github.io/blog/posts/post2/</guid>
+  <pubDate>Tue, 11 Mar 2025 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>empty post</title>
+  <link>https://lukmayer.github.io/blog/posts/post3/</link>
+  <description><![CDATA[ 
+
+
+
+  
+
+
+<p>an empty post so that you can see the pagination of the blog</p>
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <category>empty</category>
+  <guid>https://lukmayer.github.io/blog/posts/post3/</guid>
+  <pubDate>Thu, 01 Jan 1970 08:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

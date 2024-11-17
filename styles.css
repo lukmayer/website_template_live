@@ -1,0 +1,48 @@
+/* css styles */
+
+/* this is how you would set an image as your website background */
+/*
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("assets/ridges.jpg"); /* Adjust the path as needed */
+  background-size: cover; /* Cover the entire page */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-attachment: fixed; /* Make the background fixed on scroll */
+  background-position: center; /* Center the background image */
+  filter: blur(5px); /* Adjust the blur value to achieve the desired effect */
+  z-index: -1; /* Place it behind the content */
+}
+*/
+
+
+/* increase navbar font size */
+.navbar {
+  font-size: 1.3em; /* Navbar links */
+  border-radius: 20px; /* Adjust the value to change the roundness */
+}
+
+/* size of the website logo */
+.navbar-logo {
+  height: 2em !important; /* Set the logo height */
+  margin-top: 0px; /* Align the logo properly */
+  max-width: unset !important;
+  max-height: unset !important;
+  display: inline-block;
+}
+
+/* hide your website title */
+.navbar-title {
+  font-size: 0.01em; /* tiny font size */
+  opacity: 0 !important; /* hide the title */
+}
+
+/*  center the title of pages */
+.quarto-title {
+  margin: 0; /* Ensure no default margin */
+  text-align: center; /* Center the title text */
+}
